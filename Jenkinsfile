@@ -20,14 +20,14 @@ pipeline {
         stage('Build') {
             steps {
                 // Run Maven build
-                bat 'mvn clean install'
+                 mvn 'clean install'
             }
         }
 
         stage('Test') {
             steps {
                 // Run Maven tests
-                bat 'mvn test'
+                mvn 'test'
             }
         }
 
