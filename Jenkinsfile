@@ -1,5 +1,5 @@
 pipeline {
-    agent {Label 'master-node1'} // Runs on any available agent
+    agent {label 'master-node1'} // Runs on any available agent
     
     tools {
         maven 'maven 3.9' // Use configured Maven tool
